@@ -43,20 +43,34 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
      
-    .flower {
-        position: absolute;
-        bottom:0;
+    .flower-top {
+      position: absolute;
+      top: 0;
+      width: 90%;
+      z-index: 1;
+    }
+
+    .flower-bottom {
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
     }
     </style>
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-white">
     <!-- cover undangan -->
     <section
-        class="overflow-hidden relative text-center mx-auto  w-full max-w-lg flex items-center justify-center flex-col bg-cover bg-center"
-        style="background-color: #FDF4EF;">
+    class="overflow-hidden relative text-center mx-auto  w-full max-w-lg flex items-center justify-center flex-col bg-cover bg-center"
+    style="background-color: #FDF4EF;">
+    <img src="assets/ornament-1.png" alt="hiasan atas" class="flower-top">
         
         <div class="h-full  text-center mx-auto h-screen  flex items-center justify-center flex-col" style="position: relative; z-index: 99;">
             <div class="mx-auto mb-4 size-48 rounded-full aspect-square overflow-hidden">
@@ -138,11 +152,11 @@
             </div>
         </section>
 
-        <section class="relative px-6 py-12 w-full min-h-[40rem] text-center flex flex-col justify-center items-center">
+        <section class=" px-6 py-12 w-full min-h-[40rem] text-center flex flex-col justify-center items-center">
             <p class="mx-auto max-w-80 text-5xl font-latin font-bold text-orange-500">Thank you for<br>Your atention<br>Hope to see you<br>at the event</p>
         </section>
-
-            <img src="assets/bm.webp" alt="bunga" class="flower">
+            
+        <img src="assets/bm.webp" alt="hiasan bawah" class="flower-bottom">
         
     </div>
     <!-- AOS JS -->
